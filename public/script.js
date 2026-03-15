@@ -1,3 +1,18 @@
+// DOM element references
+const taskTitle = document.getElementById('task-title');
+const taskDescription = document.getElementById('task-description');
+const taskStatus = document.getElementById('task-status');
+const taskList = document.getElementById('task-list');
+
+// Progress indicator functions
+function showProgress() {
+  document.getElementById('progress-container').style.display = 'block';
+}
+
+function hideProgress() {
+  document.getElementById('progress-container').style.display = 'none';
+}
+
 // Update task statistics
 function updateTaskStats(tasks) {
   const stats = {
